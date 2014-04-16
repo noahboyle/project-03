@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- <link rel="stylesheet" type="text/css" href="fonts/arq.css">-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    
+    
+    
+    <body style="background-image: url(background.jpg);">
+    
+    <header>
+     <div class="col-lg-12">
+     <nav class="navbar navbar-default">
+     	<div class="jazz">
+		<h4 class="text-center">IMAGINATION EXPLAINED</h4>
+     	</div>
+     </nav>
+    </div>
+    
+          </header>
+  <div class="container">
+  <div class="row">
+        	<div class="col-lg-2">
+			<img class="twitter-logo" src="birdie-01.png" class="pull-left" alt="">
+			</div>
+			
+		<div class="col-lg-4">
+		
+			<div class="clearfix equalheight jumbotron">
+					<h1>“I can keep an image in view as long as I want: I will never find anything there but what I put there.”</h1>
+					<div="light">
+					<h1>- Jean-Paul Sartre</h1>
+					</div="light">
+				</div>
+			</div>
+		
+			
+		<div class="col-lg-4">
+			<div class="clearfix equalheight jumbotron">
+					<h1>“Right now my brother is hosting a wedding in our house... #imagination”</h1>
+					<div="light">
+					<h1>- 3h</h1>
+					</div="light">
+				</div>
+		
+  </div>
+		<div class="col-lg-2">
+			<img src="bookie-01.png" class="pull-right" alt="">
+			</div>
+
+			s
+        </div>
+        
+         <div class="row">
+        	<div class="col-lg-2">
+        	</div>
+        	<div class="col-lg-4">
+		
+			<div class="clearfix equalheight jumbotron">
+					<h1>“The true sign of intelligence is not knowledge but imagination.”</h1>
+					<div="light">
+					<h1>- Albert Einstein</h1>
+					</div="light">
+				</div>
+			</div>
+		
+			
+		<div class="col-lg-4">
+			<div class="clearfix equalheight jumbotron">
+					<h1>“This is how many of us view Minecraft I think #Imagination http://griffsnuff.deviantart.com/art/Minecraft-439610506 …”</h1>
+					<div="light">
+					<h1>- 4h</h1>
+					</div="light">
+				</div>
+		<div class="col-lg-2">
+        	</div>
+        	</div>
+		</div>
+        	  <div class="row">
+        	<div class="col-lg-2">
+        	</div>
+        	<div class="col-lg-4">
+		
+			<div class="clearfix equalheight jumbotron">
+					<h1>“Everything you can imagine is real.”</h1>
+					<div="light">
+					<h1>- Pablo Picasso</h1>
+					</div="light">
+				</div>
+			</div>
+		
+			
+		<div class="col-lg-4">
+			<div class="clearfix equalheight jumbotron">
+					<h1>“I dodge checking my bank account so I can imagine I have more money than I actually do #imagination”</h1>
+					<div="light">
+					<h1>- 5h</h1>
+					</div="light">
+				</div>
+		<div class="col-lg-2">
+        	</div>
+
+	
+        </div>
+
+  
+  
+
+    
+   
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        
+   
+
+
+  
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+
+        <!-- Add your site or application content here -->
+                 
+
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+        
+        <!--the 4 scripts below allow a dropdown menu as well as mobile adaptation to occur -->
+        
+        <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/vendor/bootstrap/collapse.js"></script>
+        <script src="js/vendor/bootstrap/dropdown.js"></script> 
+		<script src="js/vendor/jquery.equalheights.min.js"></script>
+		<script src="js/vendor/wikiquote-api.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+	<script>
+		$(function (){
+			var $heights = $('.equalheight');
+			
+			console.log($heights);
+			$heights.equalHeights();
+			
+			WikiquoteApi.getQuotesForSection(126452, 2, function (results){
+				var quotes = results.quotes,
+					i,
+					count = quotes.length,
+					quoteContainer = $('<div/>', {id: 'quotes'});
+				
+				console.log(results);
+				
+				for (i=0; i < 5; i++) {
+					var quote = quotes[i];
+					
+					if (quote != "\n\n") {
+						var quote = '<h2>' + quote + '</h2>';
+						quoteContainer.append(quote);
+					}
+				}
+				
+				$('body').append(quoteContainer);
+			});
+		});
+	</script> 
+        
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+    </body>
+</html>
