@@ -117,11 +117,13 @@ Variations on tag below allows us to write code for browsers below internet expl
 
 .jumbotron{
 	
-	color: #773A65;
-  background-color: white;
+	border-radius: 2px;
+	border-color: white;
+	border-style: solid;
   	.jumbotron .h1 {
     color: #773A65; 
     font-size: 3em;
+    
     }
 }
 

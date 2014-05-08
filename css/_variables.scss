@@ -440,9 +440,9 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //##
 
 
-$jumbotron-color:                #773A65 !default;
-$jumbotron-bg:                   white !default;
-$jumbotron-heading-color:        #773A65 !default;
+$jumbotron-color:                white !default;
+$jumbotron-bg:                   none !default;
+$jumbotron-heading-color:        white !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 
 

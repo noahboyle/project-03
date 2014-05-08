@@ -726,11 +726,11 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: rgb(119, 58, 101);
+  color: white;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #022377;
-    text-decoration: underline; }
+    color: white;
+    text-decoration: none; }
   a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -2528,10 +2528,13 @@ select[multiple].input-lg,
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 8px 46%;
+  padding: 8px 60px;
   font-size: 21px;
   line-height: 1.33;
-  border-radius: 0px; }
+  border-radius: 0px; 
+  margin-left: 400px;
+  margin-top: 30px;
+  }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 10px;
@@ -4246,16 +4249,19 @@ a.list-group-item.active > .badge,
   padding: 30px;
   margin-bottom: 30px;
   color: #773A65;
-  background-color: white; }
+  background-color: none; }
   .jumbotron h1,
   .jumbotron .h1 {
-    color: #773A65; }
+    color: white; }
   .jumbotron p {
     margin-bottom: 15px;
     font-size: 30px;
     font-weight: 200; }
   .container .jumbotron {
-    border-radius: 0px; }
+    border-radius: 0.6px; 
+    border-color: white;
+    border-style: solid;
+    }
   .jumbotron .container {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
