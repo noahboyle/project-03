@@ -269,7 +269,7 @@ img {
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */ }
-
+width: 70%; 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
@@ -1119,7 +1119,9 @@ pre {
   margin-right: auto;
   margin-left: auto;
   padding-left: 2.5px;
-  padding-right: 2.5px; }
+  padding-right: 2.5px; 
+  padding-top: 3em;
+  }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -1158,9 +1160,10 @@ pre {
 .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
   position: relative;
   min-height: 1px;
-  padding-left: 10px;
+  padding-left: 50px;
   padding-right: 10px; 
   margin-bottom: 0px;
+  padding-top: 2em;
   }
   
 .col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1 {
@@ -1639,13 +1642,13 @@ pre {
     width: 8.33333%; }
 
   .col-lg-2 {
-    width: 16.66667%; }
+    width: 20%; }
 
   .col-lg-3 {
     width: 25%; }
 
   .col-lg-4 {
-    width: 33.33333%; }
+    width: 40%; }
 
   .col-lg-5 {
     width: 41.66667%; }
@@ -2395,8 +2398,8 @@ select[multiple].input-lg,
   background-color: #428bca;
   border-color: #357ebd; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    color: white;
-    background-color: #3276b1;
+    color: rgb(172, 32, 99);
+    background-color: rgba(255, 255, 255, 0.8);
     border-color: #285e8e; }
   .open .btn-primary.dropdown-toggle {
     color: white;
@@ -2525,8 +2528,8 @@ select[multiple].input-lg,
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 35px;
+  padding: 8px 46%;
+  font-size: 21px;
   line-height: 1.33;
   border-radius: 0px; }
 
@@ -4264,7 +4267,7 @@ a.list-group-item.active > .badge,
         padding-right: 10px; }
       .jumbotron h1,
       .jumbotron .h1 {
-        font-size: 18px; } }
+        font-size: 30px; } }
 
 .thumbnail {
   display: block;
@@ -6104,3 +6107,7 @@ Variations on tag below allows us to write code for browsers below internet expl
   h2,
   h3 {
     page-break-after: avoid; } }
+    
+div.book-logo {
+padding-left: 30px;
+}
